@@ -55,7 +55,7 @@ export default function App() {
         {/* 图片置于文字上层：先渲染图片并设高 z-index */}
         {/* Chess 插图 — Figma 设计稿：128.89, 333.99, 225.819×225.819，内图 199.972，旋转 7.99° */}
         <a
-          href="https://link.chess.com/play/ev6MQI"
+          href="https://link.chess.com/play/53Rv7k"
           target="_blank"
           rel="noopener noreferrer"
           className="absolute flex items-center justify-center cursor-pointer overflow-visible no-underline"
