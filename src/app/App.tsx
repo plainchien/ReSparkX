@@ -54,8 +54,11 @@ export default function App() {
       >
         {/* 图片置于文字上层：先渲染图片并设高 z-index */}
         {/* Chess 插图 — Figma 设计稿：128.89, 333.99, 225.819×225.819，内图 199.972，旋转 7.99° */}
-        <div
-          className="absolute flex items-center justify-center cursor-pointer overflow-visible"
+        <a
+          href="https://link.chess.com/play/ev6MQI"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute flex items-center justify-center cursor-pointer overflow-visible no-underline"
           style={{
             left: 128.89,
             top: 333.99,
@@ -89,11 +92,12 @@ export default function App() {
               className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             />
           </div>
-        </div>
+        </a>
 
         {/* Sunflower 插图 — Figma 设计稿：35, 171, 175×243，hover/长按 随风摆动 */}
-        <div
-          className={`absolute cursor-pointer ${sunflowerActive ? "sunflower-sway" : ""}`}
+        <a
+          href="https://www.resparkx.com/readaloud/"
+          className={`absolute cursor-pointer no-underline ${sunflowerActive ? "sunflower-sway" : ""}`}
           style={{
             left: 35,
             top: 171,
@@ -127,7 +131,7 @@ export default function App() {
             }}
             className="block w-full h-full object-cover pointer-events-none"
           />
-        </div>
+        </a>
 
         {/* ReSparkX Logo — Figma 1:4 */}
         <p
