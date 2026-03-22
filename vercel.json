@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/readaloud", "destination": "https://read-aloud-sigma.vercel.app/readaloud" },
+    { "source": "/readaloud/:path*", "destination": "https://read-aloud-sigma.vercel.app/readaloud/:path*" },
+    { "source": "/api/:path*", "destination": "https://read-aloud-sigma.vercel.app/api/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

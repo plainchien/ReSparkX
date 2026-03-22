@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Metal";
+  src: local("Metal"), local("Metal-Regular");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  background-color: var(--page-bg);
+  min-height: 100%;
+}
+
+:root {
+  --page-bg: #F4F1ED;
+  --canvas-bg: #F4F1ED;
+  --text-color: #050710;
+  --text-muted: rgba(5, 7, 16, 0.3);
+  --text-footer: rgba(5, 7, 16, 0.4);
+  --font-weight: 100;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 100;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: #000000;
+    --canvas-bg: #000000;
+    --text-color: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.3);
+    --text-footer: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes sunflower-sway {
+  0%, 100% { transform: rotate(-2deg); }
+  20% { transform: rotate(1deg); }
+  40% { transform: rotate(3deg); }
+  60% { transform: rotate(0deg); }
+  80% { transform: rotate(-1.5deg); }
+}
+
+.sunflower-sway {
+  transform-origin: bottom center;
+  animation: sunflower-sway 2.5s ease-in-out infinite;
+}
