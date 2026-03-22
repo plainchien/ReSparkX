@@ -3,9 +3,9 @@
     { "source": "/readaloud", "destination": "/readaloud/", "permanent": false }
   ],
   "rewrites": [
-    { "source": "/readaloud/", "destination": "https://read-aloud-97n82ip4s-orangezilv-9569s-projects.vercel.app/readaloud" },
-    { "source": "/readaloud/:path*", "destination": "https://read-aloud-97n82ip4s-orangezilv-9569s-projects.vercel.app/readaloud/:path*" },
-    { "source": "/api/:path*", "destination": "https://read-aloud-97n82ip4s-orangezilv-9569s-projects.vercel.app/api/:path*" },
+    { "source": "/readaloud/", "destination": "https://read-aloud-sigma.vercel.app/readaloud/" },
+    { "source": "/readaloud/:path*", "destination": "https://read-aloud-sigma.vercel.app/readaloud/:path*" },
+    { "source": "/api/:path*", "destination": "https://read-aloud-sigma.vercel.app/api/:path*" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
