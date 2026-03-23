@@ -4,6 +4,7 @@
  */
 
 import { useState, useRef, useCallback } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 // Chess 棋子：本地资源（pawn / queen）
 const IMG_CHESS_PAWN = "/chess-pawn.png";
@@ -43,6 +44,7 @@ export default function App() {
         minWidth: "100%",
       }}
     >
+      <Analytics />
       {/* 390×704 画布 — Figma 1:3，桌面端背景平铺 */}
       <div
         className="relative overflow-hidden"
