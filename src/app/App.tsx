@@ -8,10 +8,8 @@ import { useState, useRef, useCallback } from "react";
 // Chess 棋子：本地资源（pawn / queen）
 const IMG_CHESS_PAWN = "/chess-pawn.png";
 const IMG_CHESS_QUEEN = "/chess-queen.png";
-const IMG_SUNFLOWER =
-  "https://www.figma.com/api/mcp/asset/301b3d3a-2ca9-4eaf-8f4d-3d14f33041f8";
-const FALLBACK_SUNFLOWER =
-  "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=400";
+/** 与 public/sunflower.png 一致（勿使用 Figma MCP / 外链，避免线上加载失败） */
+const IMG_SUNFLOWER = "/sunflower.png";
 
 const LONG_PRESS_MS = 500;
 
@@ -125,10 +123,6 @@ export default function App() {
           <img
             alt="Sunflower"
             src={IMG_SUNFLOWER}
-            onError={(e) => {
-              const t = e.currentTarget;
-              if (t.src !== FALLBACK_SUNFLOWER) t.src = FALLBACK_SUNFLOWER;
-            }}
             className="block w-full h-full object-cover pointer-events-none"
           />
         </a>
