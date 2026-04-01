@@ -4,6 +4,7 @@
  */
 
 import { useState, useRef, useCallback } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 // Chess 棋子：本地资源（pawn / queen）
 const IMG_CHESS_PAWN = "/chess-pawn.png";
@@ -209,6 +210,7 @@ export default function App() {
           © 2026 ReSparkX by Xlll
         </p>
       </div>
+      <Analytics />
     </div>
   );
 }
